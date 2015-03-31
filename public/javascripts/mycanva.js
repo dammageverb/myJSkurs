@@ -1,4 +1,5 @@
-var canvas1, grad, radians, size, img;
+//dmmg
+var canvas1, grad, size, img;
 function initiate () {
 	var elem = document.getElementById('topcanvas');
 	canvas1 = elem.getContext('2d');
