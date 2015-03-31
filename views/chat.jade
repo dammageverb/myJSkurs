@@ -1,0 +1,16 @@
+extend layout
+block content
+  h3#h3chat Общайтесь на нашем сайте тут:
+  .chatcontainer
+   ul#messages
+      form
+        input#m(size='75' autocomplete='off')
+        button#sendbtn Отправить
+        input#accnick(size='15' autocomplete='off' placeholder='Ваш ник')
+        button#accnickbtn Ok
+        button#ncancel Сменить ник
+      script(src='http://code.jquery.com/jquery-latest.min.js')
+      script(src='/socket.io/socket.io.js')
+
+
+

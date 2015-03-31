@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    title Мои курсы по JS
+    meta(charset='utf-8')
+    meta(name='description', content='test for javascritp')
+    // ------------------------------------------------------------------ Подключаем css-ку бутстрапа*/
+    //link(href='media/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // ------------------------------------------------------------------ Подключаем css-ку бутстрапа*/
+    //link(href='css/mycss.css', rel='stylesheet')
+    for script in scripts
+      script(src='#{script}')
+    script(src='https://cdn.socket.io/socket.io-1.0.0.js')
+    for style1 in styles
+      link(href='#{style1}', type='text/css', rel='stylesheet')
+    script(src='/socket.io/socket.io.js')
+    script(src='javascripts/mycanva.js')
+  body
+    // ------------------------------------------------------------------ Название сайта + логотип
+    #header
+      a.logolink(href='#')
+      canvas#topcanvas(width = '250', height = '140')
+      h1  Обучаемся JS вместе&nbsp&nbsp
+    .menutop
+      a(href='main') Главная
+      a(href='whyneedjs') Зачем нужен js
+      a(href='ourlessons') Наше обучение js
+      a(href='whatlearn') Чему научились на курсах
+      a(href='contacts') Контактные данные
+    #mainbody
+      .col-md-2
+        h3(align='center')  Ссылки доп. меню 
+
+        a.btn.btn-default(href='canva', style='margin-top:10px')  Рисовалка
+        a.btn.btn-default(href='video')  Видосы
+        a.btn.btn-default(href='galary')  Galary
+        a.btn.btn-default(href='urok1')  Занятие 1
+        a.btn.btn-default(href='urok2')  Занятие 2
+        if userid
+         a.btn.btn-default(href='userpage')  Личный кабинет
+         a.btn.btn-default(href='chat')  Чат
+         a.btn.btn-default(href='logout')  Выход
+        else	
+         a.btn.btn-default(href='reg')  Вход/Регистрация
+      .col-md-8
+        block content
+        block bodytext
+        
+        div(id#='mainblock')
+      .col-md-2
+        h3(align='center')  Погода 
+        // pogoda.by
+        // Информер распространяется свободно и на безвозмездной основе. Однако, в случае изменения кода информера (в частности, удаления ссылок), POGODA.BY снимает с себя ответственность за конечный результат.
+        table#weather(width='95%', height='180', style='background-color:#f2d141; border: #cccccc 1px solid; font-family:Tahoma; font-size:12px; color:#000000;', cellpadding='2', cellspacing='0')
+          tr
+            td
+              a(href='http://6.pogoda.by/26850', style='font-family:Tahoma; font-size:12px; color:#003399;', title='Погода Минск на 6 дней - Гидрометцентр РБ', target='_blank') Погода Минск
+          tr
+            td
+              table(width='100%', height='100%', style='background-color:#f2d141; font-family:Tahoma; font-size:12px; color:#000000;', cellpadding='0', cellspacing='0')
+                tr
+                  td
+                    script(type='text/javascript', charset='windows-1251', src='http://pogoda.by/meteoinformer/js/26850_1.js')
+          tr
+            td(align='right')
+              | Информация сайта 
+              a(href='http://www.pogoda.by', target='_blank', style='font-family:Tahoma; font-size:12px; color:#003399;') pogoda.by
+      // закрытие дива mainbody
+    // Футер
+    .myfooter
+      .col-md-3
+        h4#footleft  (с) Вербицкий Сергей
+      .col-md-6
+        h4#footmid  Тестовая страничка разработана для опытов с JS на "живых" HTML-страницах :)
+      .col-md-3
+        h4#footright  Минск 2015
+      // End Футер

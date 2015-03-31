@@ -1,0 +1,127 @@
+#header {
+    height: 61px;
+
+    background-image: url(../image/logo1.jpg);
+    border: 2px solid;
+    background-color: darkorchid;
+    margin-left: 80px ;
+    margin-right: 80px;
+
+}
+h1 {
+    text-align: center;
+}
+
+.logo {
+    /*background: linear-gradient(to top, #fefcea, #f1da36);*/
+    height: 58px;
+    width: 116px;
+    float:left;
+}
+
+.logolink {
+
+}
+
+html {
+
+}
+body{
+    width: 100%;
+    height: 815px;
+
+    background: -ms-linear-gradient(to top, #fefcea, #98eda3)no-repeat;
+    background: linear-gradient(to top, #fefcea, #98eda3) no-repeat;
+
+}
+
+.menutop {
+    /*w3c не пропускает - пишет что слишком много значений, либо значение не распознано*/
+    display: -moz -box;
+    display: -webkit -flex;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+    margin-left: 80px ;
+    margin-right: 80px;
+    border: solid 2px;
+
+
+    align-items: center;
+
+}
+/* --------------------------------------------------Верхнее меню */
+
+.menutop a {
+  /*  flex: -moz -box: 1;
+    flex: 1;
+    display: block;*/
+    font-size: 14px;
+    padding: 7px;
+    text-align: center;
+    color: #807709;
+    text-decoration: none;
+}
+.menutop a:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+
+
+}
+
+.menutop a:hover {
+    color: red;
+}
+
+.menutop a::after {
+    content: '\00a0';
+}
+/* --------------------------------------------------конец Верхнее меню */
+
+/* --------------------------------------------------Центральная часть */
+.btn {
+width: 100%;
+   margin: auto;
+
+}
+
+#mainbody {
+    margin-left: 80px ;
+    margin-right: 80px;
+    border: solid 2px;
+    height: 100%;
+}
+/*
+.col-md-2 {
+    /*border: solid 2px;*/
+    margin: 0;
+    padding: 0;
+}
+.col-md-3 {
+   /* border: solid 2px;*/
+    margin: 0;
+    padding: 0;
+
+}
+div#mainbody > div {
+    height: 100%;
+    border: dotted 1px;
+                      }
+
+.myfooter {
+    border: solid 2px;
+    height: 70px;
+    margin-left: 80px ;
+    margin-right: 80px;
+}
+
+div.myfooter > div {
+    border: solid 1px;
+    height: 100%;
+    text-align: center;
+}
+
+#weather {
+margin: auto;
+}

@@ -1,0 +1,6 @@
+scripts[0] - jquery.js
+scripts[1] - main.js
+scripts[2] - vendor1.js
+scripts[3] - vendor2.js
+scripts[4] - chat
+scripts[5] = 'javascripts/video.js'

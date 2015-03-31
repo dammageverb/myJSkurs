@@ -1,0 +1,56 @@
+.div-galary
+{
+    width: 95%;
+   /* overflow: hidden;*/
+    height: 500px;
+    margin: 70px 30px 70px 30px;
+}
+.ul-galary
+{
+   /* width: 717px;*/
+    background: #F3E9E0;
+    overflow: hidden;
+    padding: 0;
+    margin: -44px 0 -43px;
+}
+.ul-galary li {
+    float: left;
+    list-style: none;
+    border-top: 1px solid #C6B6AE;
+    border-bottom: 1px solid #C6B6AE;
+    padding: 43px 52px 43px 52px;
+    margin-bottom: -1px;
+}
+.ul-galary li img {
+    display: block;
+    width: 158px;
+    height: 139px;
+    border: 1px solid #D8C8BA;
+    background: #EDE1CE;
+    padding: 13px;
+}
+/*--------------------------------------*/
+.ul-galary a {text-decoration:none; color:#353338;}
+span.galary {position:absolute; width:184px;}
+
+span.galary em
+{
+    position:absolute;
+    z-index:100;
+    font:normal 11px Tahoma;
+    line-height:13px;
+    border: 1px solid #D8C8BA;
+    background-color: #F6EEE2;
+    top:-1px;
+    width:158px;
+    padding:3px 13px;
+    cursor:pointer;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* IE, Chrome*/
+    -o-text-overflow: ellipsis; /* Opera */
+    -moz-binding: url('text-overflow.xml#ellipsis'); /* for Firefox */
+}
+
+a:hover span em {white-space:normal; -moz-binding: url('text-overflow.xml#none');}
+a:hover {white-space:normal;} /* for IE6 hover effect*/

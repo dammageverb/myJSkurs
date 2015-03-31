@@ -1,0 +1,13 @@
+extend layout
+block content
+  h2(align = 'center') Вход
+  .flogin
+   form.login(method='POST', action = '/reg')
+    input(type='text', name = 'username', placeholder='Логин', autocomplete='on')
+    br
+    br
+    input(type='password', name = 'password', placeholder='Пароль', autocomplete='off')
+    br
+    .submitbtn
+     br
+     button(type='submit', name=submit) Принять

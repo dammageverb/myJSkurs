@@ -1,0 +1,10 @@
+styles[0] - bootstrap - норм
+styles[1] - mycss - пока не трогать
+styles[2] - galary.css - пока не трогать
+styles[3] - login - пока норм
+styles[4] - userpage
+styles[5] - chat
+styles[6] - video
+
+
+css/register.css
