@@ -24,8 +24,11 @@ var auth = require ('./routes/auth');
 var video = require ('./routes/video');
 //holst
 var holst = require ('./routes/holst');
+//geoloc
+var geo = require ('./routes/geo');
+var geo2 = require ('./routes/geo2');
 //chat
-//var chat_old = require('./routes/chat_old');//4 test
+
 var chat = require ('./routes/chat'); //working chat
 
 var app = express();
@@ -89,6 +92,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.index);
 app.get ('/video', video.videoloading);
+app.get ('/geo', geo.geoloading);
+app.get ('/geo2', geo2.geoloading);
 app.get ('/canva', holst.holstloading);
 app.get ('/chat', checkAuth, chat.loadingchat);
 //app.get ('/chat-old', checkAuth, chat_old.loadingchat);

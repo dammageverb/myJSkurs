@@ -1,4 +1,3 @@
-
 window.onload = mylinks;
 //функция перечисляет значения ссылок в блоке менютоп
 //asdfasdfasd

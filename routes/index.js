@@ -1,10 +1,11 @@
 exports.index = function(req,res){
 //console.log(req.session.user);
+    var index;
 if(req.params.id){
-var index = req.params.id;
+index = req.params.id;
 }
 else{
-var index = 'index';
+index = 'index';
 }
     var config = require ('../config');
 
@@ -13,9 +14,11 @@ Maintexts.findOne({'url':index},function(err,text){
 console.log (text);
 
     if(!text){
+        console.log('zna4enie dlia text: '+ text);
 		text = {
 		name:'Добро пожаловать на сайт',
 		body:'Извините страница не найдена'
+
 			}
 		}
 

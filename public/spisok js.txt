@@ -4,3 +4,7 @@ scripts[2] - vendor1.js
 scripts[3] - vendor2.js
 scripts[4] - chat
 scripts[5] = 'javascripts/video.js'
+scripts[6] = 'javascripts/holst.js'
+scripts[7] = 'javascripts/geo.js
+scripts[8] = 'javascripts/geo2.js''
+

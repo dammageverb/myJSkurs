@@ -5,6 +5,10 @@ styles[3] - login - пока норм
 styles[4] - userpage
 styles[5] - chat
 styles[6] - video
+styles[7] - holst
+styles[8] - geo
+styles[9] - geo2
+
 
 
 css/register.css

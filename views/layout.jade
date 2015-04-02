@@ -15,6 +15,8 @@ html
       link(href='#{style1}', type='text/css', rel='stylesheet')
     script(src='/socket.io/socket.io.js')
     script(src='javascripts/mycanva.js')
+    //script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true')
+    script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyASvHBpiljaZAX3D_6Q3mInzkpf0-WZkmQ&sensor=false')
   body
     // ------------------------------------------------------------------ Название сайта + логотип
     #header
@@ -34,8 +36,9 @@ html
         a.btn.btn-default(href='canva', style='margin-top:10px')  Рисовалка
         a.btn.btn-default(href='video')  Видосы
         a.btn.btn-default(href='galary')  Galary
-        a.btn.btn-default(href='urok1')  Занятие 1
-        a.btn.btn-default(href='urok2')  Занятие 2
+        a.btn.btn-default(href='geo')  Geolocation
+        a.btn.btn-default(href='geo2') Geolocation-navi
+        a.btn.btn-default(href='#') Новое занятие
         if userid
          a.btn.btn-default(href='userpage')  Личный кабинет
          a.btn.btn-default(href='chat')  Чат
